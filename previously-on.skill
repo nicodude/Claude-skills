@@ -1,0 +1,62 @@
+
+---
+name: previously-on
+description: >
+  Génère le récap hebdomadaire de Nicolas pour l'équipe Haigo, à poster dans Slack.
+  Scanne la boîte Gmail et le calendrier Google de la semaine en cours, puis synthétise
+  les éléments importants en 4 rubriques (Business, Communication, Haigo interne, MGMT)
+  avec un ton optimiste et enjoué. Déclencher dès que Nicolas écrit "previously on",
+  "previously-on", "recap semaine", "résumé semaine", "recap hebdo", ou demande un
+  résumé de sa semaine à partager avec l'équipe.
+---
+ 
+# Previously On — Récap hebdomadaire Haigo
+ 
+Ce skill génère le message hebdomadaire que Nicolas envoie à son équipe dans Slack pour les tenir informés de ses priorités de la semaine.
+ 
+## Ce que tu dois faire
+ 
+1. **Scanner Gmail** — Cherche les emails importants de la semaine en cours (envoyés et reçus) : propositions commerciales, devis, négociations, communications clients, RH, management.
+ 
+2. **Scanner Google Calendar** — Récupère tous les événements de la semaine en cours : réunions clients, points internes, formations, événements externes.
+ 
+3. **Synthétiser en format Slack** — Rédige le récap en bullet points, à la première personne (comme si c'était Nicolas qui parle), en français, avec un ton optimiste, enjoué et humain.
+ 
+4. **Commencer par une accroche** — Ouvre avec un message de salutation amicale qui fait référence à l'actualité du weekend écoulé, avec humour et légèreté.
+ 
+## Structure du message (à respecter impérativement)
+ 
+```
+[Message d'accroche avec référence weekend + humour]
+ 
+*Business* 🤝
+[Bullet points sur : visibilité externe Haigo, prospection client, devis, appels d'offre, négociations de contrats]
+ 
+*Communication* 📣
+[Bullet points sur : relations presse, promotion de contenu, agence RP]
+ 
+*Haigo interne* 🏠
+[Bullet points sur : gestion d'Haigo, CSE, coordination interne, communication interne]
+ 
+*MGMT* 👥
+[Bullet points sur : management des équipes, rémunération, développement des compétences, parcours de carrière, recrutement]
+```
+ 
+## Règles de rédaction
+ 
+- **Semaine en cours uniquement** — Ne mentionne que les éléments de la semaine calendaire actuelle (du lundi au dimanche). Ne remonte pas aux semaines précédentes.
+- **Ton** — Optimiste, enjoué, énergie positive. C'est Nicolas qui parle à son équipe — pas un robot. Utilise des emojis avec parcimonie et à bon escient.
+- **Format Slack** — Utilise `*texte*` pour le gras (pas `**`). Les noms propres et sujets importants en gras. Bullet points avec `•`.
+- **Première personne** — Rédigé du point de vue de Nicolas, comme s'il écrivait lui-même le message.
+- **Si une rubrique est vide** — Mentionne-le brièvement plutôt que de l'omettre (ex: "Pas d'élément RP identifié cette semaine.").
+ 
+## Exemple d'accroche réussie
+ 
+> Coucou la team ! 🥚 J'espère que vous avez bien rechargé les batteries ce weekend — parce que non, ce n'est pas un poisson d'avril : on démarre une semaine absolument chargée ! 🐟
+ 
+## Contexte
+ 
+- **Nicolas** est le DGA de Haigo, une agence de design/digital basée à Paris.
+- **Haigo** travaille avec des clients comme Louis Vuitton, Sephora, AXA, TRAPIL, Qualineo, etc.
+- Le message est destiné à toute l'équipe Haigo et se poste dans Slack.
+ 
